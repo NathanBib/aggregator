@@ -22,7 +22,7 @@ public class AggregatorTests {
                 "id", 2,
                 "cnt_0", 3
         );
-        final var aggregator = new Aggregator(header);
+        final Aggregator aggregator = Aggregator.implementation(header);
 
         // when
         final var result = aggregator.Aggregate(lines);
